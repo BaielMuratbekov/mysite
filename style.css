@@ -1,0 +1,287 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital@1&display=swap");
+body {
+  margin: 0;
+  min-width: 500px;
+  font-family: "Times New Roman", Times, serif;
+}
+* {
+  box-sizing: border-box;
+}
+.container {
+  max-width: 980px;
+  margin: 0 auto;
+  padding: 0 0.5rem;
+}
+.row{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+}
+/* header */
+header {
+  background-color: white;
+  height: 600px;
+}
+
+.header_info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+.header_title {
+  color: #000000;
+  text-transform: uppercase;
+  line-height: 1.3rem;
+  letter-spacing: 0.1rem;
+  font-family: "Lora", serif;
+  font-weight: 200;
+  font-size: 40px;
+}
+.header_title h1 {
+  font-size: 45px;
+  font-weight: 500;
+  line-height: 1.5rem;
+}
+.header__flex {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  height: 50px;
+  margin-top: 50px;
+}
+.header__flex div {
+  margin: 0 10px;
+}
+.two,
+.three {
+  flex: 0 0 50%;
+}
+.header_title.one {
+  flex: 0 0 100%;
+  font-size: 40px;
+  line-height: 2.55rem;
+  font-weight: 100;
+}
+
+.header_title.two {
+  font-size: 20px;
+  line-height: 1.55rem;
+}
+
+.three {
+  color: #2b2b2b;
+  font-size: 12px;
+  line-height: 1.55;
+  font-weight: 300;
+  opacity: 0.7;
+  font-family: "MullerRomul", Arial, sans-serif;
+}
+
+.bottom_info {
+  transform: translate(50%, 20%);
+}
+.header_titul {
+  display: flex;
+  flex-direction: row;
+  margin-top: -45px;
+  transform: translateX(-10%);
+  width: 100%;
+}
+.header_titul h6 {
+  font-size: 22px;
+  color: #2b2b2b;
+  font-family: "MullerRomul", Arial, sans-serif;
+  line-height: 1.55;
+  font-weight: 400;
+  opacity: 0.7;
+  padding: 0 50px;
+}
+.ball {
+  position: absolute;
+  top: 45%;
+  left: -15%;
+  width: 750px;
+  height: 742px;
+  border-top-left-radius: 3000px;
+  border-top-right-radius: 3000px;
+  
+  background-color: #ffd794;
+}
+.img {
+  transform: translate(10%, -40%);
+}
+
+.header__icon {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: start;
+  align-items: center;
+}
+.header__icon img {
+  flex: 0 0 60px;
+}
+.header__icon span{
+  flex-grow: 1;
+}
+
+.header__icon span {
+  color: #2b2b2b;
+  font-size: 45px;
+  font-family: "MullerRomul", Arial, sans-serif;
+  line-height: 1.55;
+  font-weight: 300;
+  opacity: 0.7;
+}
+.button {
+  align-items: center;
+  display: flex;
+  justify-content: flex-start;
+  margin-top: 30px;
+}
+.btn {
+  background-image: url(https://thumb.tildacdn.com/tild6561-6464-4438-a536-656331353739/-/cover/256x69/center/center/-/format/webp/Rectangle_2.png);
+  background-size: cover;
+  width: 256px;
+  height: 70px;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+.button a {
+  color: #2b2b2b;
+  font-size: 21px;
+  font-family: "MullerRomul", Arial, sans-serif;
+  line-height: 1.55;
+  font-weight: 400;
+  opacity: 0.7;
+  text-decoration: none;
+}
+.button_info img {
+  transform: rotate(-25deg);
+  margin-bottom: 50px;
+  margin-left: 20px;
+}
+/* header */
+/* galerey */
+#galerey {
+  position: absolute;
+  width: 100%;
+  height: 560px;
+  background-color: rgb(7, 7, 7);
+  margin-top: 112px;
+  padding: 100px 0 50px;
+
+}
+.col-4{
+  flex: 0 0 33.33333333%;
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: row;
+  
+
+}
+
+.product {
+  background-color: white;
+  width: 300px;
+  margin: 0 30px;
+}
+.image {
+  margin-bottom: 10px;
+}
+.image img {
+  width: auto;
+  height: auto;
+  object-fit: cover;
+  padding-left: 0;
+  transition: .3s ease padding-left;
+}
+.image img:hover{
+  padding-left: 8px;
+
+}
+.info {
+  padding: 0 10px;
+  font-weight: 700;
+  font-family: 'MullerRomul',Arial,sans-serif;
+}
+.info h3 {
+  color: #000000;
+  font-size: 25px;
+  padding-bottom: 15px;
+  text-transform: uppercase;
+  padding: 0;
+  margin: 0;
+  font-weight: 500;
+  
+  line-height: 1.35;
+}
+.info strong:first-child {
+  color: #000000;
+  font-size: 18px;
+  line-height: 0.9;
+
+}
+.info strong:last-child{
+  color: rgb(2, 214, 103);
+}
+/* end galerey */
+/* about */
+#about .about {
+  width: 100%;
+  height: 500px;
+  background-image: url(./img/Vector.svg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin-top: 50%;
+ 
+}
+.about-top{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 0;
+  padding-top: 40px;
+  margin-bottom: 40px;
+  
+}
+.about-top span{
+  color: #000000;
+  font-size: 40px;
+  font-family: "Lora", serif;
+  line-height: 1.3;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+.about-img{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+.about-img img{
+  width: auto;
+  height: auto;
+  object-fit: cover;
+  background-repeat: no-repeat;
+}
+.about-info{
+  width: fit-content;
+  color: #252526;
+  font-size: 15px;
+  font-family: 'MullerRomul',Arial,sans-serif;
+  line-height: 1.3;
+  flex-direction: column;
+}
+.about-info h2{
+
+  font-weight: 700;
+}
+.about-info p{
+
+  font-weight: 400;
+}
+
+/* end about */
